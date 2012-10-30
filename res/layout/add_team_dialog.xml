@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <EditText
+      android:id="@+id/at_et_team_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/team_name"
+      android:ems="10" >
+
+
+    <requestFocus android:layout_width="wrap_content" />
+
+  </EditText>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="5dp"
+      android:splitMotionEvents="true" >
+
+      <RadioGroup
+          android:id="@+id/at_rg_choose_buttons"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center"
+          android:orientation="horizontal">
+
+        <RadioButton
+		        android:id="@+id/at_rb_baseball"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/baseball" />
+
+        <RadioButton
+            android:id="@+id/at_rb_softball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/softball" />
+
+      </RadioGroup>
+    <CheckBox
+        android:id="@+id/at_cb_default_team"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/_default" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" >
+
+      <Button
+          android:id="@+id/at_btn_cancel"
+          style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Cancel" />
+
+      <Button
+          android:id="@+id/at_btn_add"
+          style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Add" />
+
+  </LinearLayout>
+
+</LinearLayout>
